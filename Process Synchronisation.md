@@ -93,4 +93,4 @@ The mechanism that will allow them to exchange data and information are the foll
 1. A particular region of memory is shared between cooperating process.
 2. Cooperating process can exchange information by reading and writing data to this shared region.
 3. It’s faster than Memory Parsing, as Kernel is required only once, that is, setting up a shared memory . After That, kernel assistance is not required.
-![[Inter-process-Communication-–-2.webp]]
+![Inter-process-Communication](Inter-process-Communication-–-2.webp)
