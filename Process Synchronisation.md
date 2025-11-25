@@ -41,7 +41,8 @@ If multiple processes or threads attempt to enter the critical section simultane
 Necessary and sufficient conditions for a solution to the critical section  problem:
 
 
-![[Process-synchronization-solutions.webp]]
+![Process Synchronization](Process-synchronization-solutions.webp)
+
 
 - Entry Section – To enter the critical section code, a process must request permission. Entry Section code implements this request.
 - Critical Section – This is the segment of code where process changes common variables, updates a table, writes to a file and so on. When 1 process is executing in its critical section, no other process is allowed to execute in its critical section.
