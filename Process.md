@@ -42,7 +42,7 @@ Every process has a process memory, which is generally divided into 4, this is d
 How is a process actually created?
 It is done in various ways such as when a user initiates a program (opens an app) or when the OS launches system processes during startup
 Process Creation involves allocating necessary resources, setting up execution environment, initializing the PCB (Process Control Block)
-![[Process-life-cycle-1-1024x640.webp]]
+![Process-life-cycle-1-1024x640.webp](Process-life-cycle-1-1024x640.webp)
 
 
 ## Process Control Block (PCB):
@@ -51,7 +51,7 @@ Process Control Block in Operating System is a data structure which has all the 
 
 When we use a computer or a mobile phone, we often open multiple apps or perform many tasks at once – like listening to music while browsing the internet or downloading a file.  The system keeps track of all these running tasks without getting confused using PCB
 **Without PCBs, the system wouldn’t know what each task was doing – leading to confusion and errors.**
-![[Process-Control-block-in-os.webp]]
+![Process-Control-block-in-os.webp](Process-Control-block-in-os.webp)
 
 1. **Process ID or PID –** Unique Integer Id for each process in any stage of execution.
 2. **Process Stage –** The state any process currently is in, like Ready, wait, exit etc
@@ -246,3 +246,36 @@ Optimize the system for both interactive and background workloads.
 
 - If a process uses too much CPU → **demoted to lower queue**
 - If it waits too long → **promoted back up**
+
+
+
+## Threads:
+. Threads are **Smallest sequence of programmed instruction** that can be managed independently by a scheduler.
+- A thread comprises of its own
+    - **Thread ID –** Unique ID for a thread in execution
+    - **Program counter –** Keeps track of instruction to execute
+    - **System Register set –** Active Variables of thread
+    - **Stack –** All execution history (Can be used for debugging)
+    
+![Threads-in-Operating-System](Threads-in-Operating-System-–-3.webp)
+
+### **What is a program?**
+
+Program is an executable file containing the set of instructions written to perform a specific job on your computer. For example, **notepad.exe** is an executable file containing the set of instructions which help us to edit and print the text files.
+
+Programs are not stored on the primary memory in your computer. They are stored on a disk or a secondary memory on your computer. They are read into the primary memory and executed by the kernel. A program is sometimes referred as **passive entity** as it resides on a secondary memory.
+
+### **What is a process?**
+
+Process is an executing instance of a program. For example, when you double click on a notepad icon on your computer, a process is started that will run the notepad program.
+
+A process is sometimes referred as **active entity** as it resides on the primary memory and leaves the memory if the system is rebooted. Several processes may related to same program. For example, you can run multiple instances of a notepad program. Each instance is referred as a process.
+
+
+### **What is a thread?**
+
+Thread is the smallest executable unit of a process. For example, when you run a notepad program, operating system creates a process and starts the execution of main thread of that process.
+
+A process can have multiple threads. Each thread will have their own task and own path of execution in a process. For example, in a notepad program, one thread will be taking user inputs and another thread will be printing a document.
+
+All threads of the same process share memory of that process. As threads of the same process share the same memory, communication between the threads is fast.

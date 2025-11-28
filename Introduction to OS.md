@@ -70,7 +70,7 @@ The OS can then:
 Stop the program if it's been running too long
 Or switch to another program (this is called scheduling)
 
-![[Pasted image 20251121124133.png]]
+![System Call](System%20Call.png)
 
 
 ### Evolution of OS
